@@ -1,28 +1,46 @@
 {
-  "name": "deathblows.tech",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.4.8",
-    "@types/react": "18.2.18",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.13",
-    "next": "13.4.13",
-    "postcss": "8.4.27",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
-  },
-  "devDependencies": {
-    "@types/eslint": "^8"
-  }
+	"name": "deathblows.tech",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "rm -rf .next && next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prepare": "panda codegen"
+	},
+	"dependencies": {
+		"@ark-ui/react": "^0.13.1",
+		"@mantine/hooks": "^6.0.18",
+		"@radix-ui/react-slot": "^1.0.2",
+		"@tabler/icons-react": "^2.30.0",
+		"@theme-toggles/react": "^4.1.0",
+		"@types/node": "20.4.8",
+		"@types/react": "18.2.18",
+		"@types/react-dom": "18.2.7",
+		"autoprefixer": "10.4.14",
+		"cmdk": "^0.2.0",
+		"eslint": "8.46.0",
+		"eslint-config-next": "13.4.13",
+		"next": "13.4.13",
+		"next-themes": "^0.2.1",
+		"normalize.css": "^8.0.1",
+		"postcss": "8.4.27",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-tooltip": "^5.21.1",
+		"typescript": "5.1.6"
+	},
+	"devDependencies": {
+		"@pandacss/dev": "^0.11.0",
+		"@park-ui/presets": "^0.7.0",
+		"@shadow-panda/preset": "^0.1.0",
+		"@types/eslint": "^8"
+	},
+	"volta": {
+		"node": "18.11.0",
+		"yarn": "4.0.0-rc.43"
+	},
+	"packageManager": "yarn@4.0.0-rc.43"
 }
