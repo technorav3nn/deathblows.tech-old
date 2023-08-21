@@ -46,7 +46,7 @@ export default function Home() {
 				</section>
 			</Wrap>
 			<HStack gap="2" mt="10">
-				<IconButton aria-label="Github Link" variant="secondary">
+				<IconButton aria-label="Github Link" variant="secondary" asChild>
 					<a
 						href="https://github.com/technorav3nn"
 						target="_blank"
@@ -55,7 +55,7 @@ export default function Home() {
 						<IconBrandGithub size={20} />
 					</a>
 				</IconButton>
-				<IconButton aria-label="Discord Link" variant="secondary">
+				<IconButton aria-label="Discord Link" variant="secondary" asChild>
 					<a
 						href="
 					https://discord.com/users/304043360963002370"

@@ -1,14 +1,6 @@
-import { Tooltip as TooltipPrimitive } from "react-tooltip";
+import { Portal } from "../Portal/Portal";
 import { tooltip } from "./Tooltip.recipe";
-import {
-	HoverCard,
-	HoverCardArrow,
-	HoverCardArrowTip,
-	HoverCardContent,
-	HoverCardPositioner,
-	HoverCardTrigger,
-	Portal,
-} from "@ark-ui/react";
+import { HoverCard, HoverCardContent, HoverCardPositioner, HoverCardTrigger } from "@ark-ui/react";
 
 interface TooltipProps {
 	content: React.ReactNode;
